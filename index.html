@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <form class="container">
+    <div>
+      <label for="firstName" type="text">First Name:</label>
+      <input type="text" id="firstName" name="fistName" required> 
+    </div>
+    <div>
+      <label for="lastName" type="text">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required>
+    </div>
+    <div>
+      <label for="email" type="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="password" type="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <div>
+      <label for="password" type="password">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required>
+    </div>
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+    <div>
+      <button type="button" onclick="clearForm()">Reset</button> 
+    </div>
+  </form>
+  <script>
+    function clearForm() {
+      document.getElementById("firstName").value = "";
+      document.getElementById("lastName").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("password").value = "";
+      document.getElementById("confirmPassword").value = "";
+    }
+  </script>
+
+</body>
+</html>

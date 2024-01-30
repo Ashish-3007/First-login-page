@@ -1,0 +1,73 @@
+.container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 60%;
+  height: 75%;
+  padding: 64px;
+  margin: 5rem auto;
+  border-radius: 24px;
+  border: 3px solid #2E88B6;
+  background: #ADD8E6;
+  gap: 64px;
+}
+
+.container :nth-child(3){
+  grid-column: span 2;
+}
+
+@media only screen and (max-width: 600px){
+  .container{
+    padding: 32px;
+    gap: 32px;
+  }
+
+  .container :nth-child(1){
+    grid-column: span 2;
+  }
+  .container :nth-child(2){
+    grid-column: span 2;
+  }
+  .container :nth-child(1){
+    grid-column: span 2;
+  }
+  .container :nth-child(4){
+    grid-column: span 2;
+  }
+  .container :nth-child(5){
+    grid-column: span 2;
+  }
+}
+
+label{
+  display: block;
+  margin-bottom: 12px;
+  color: #000;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+input{
+  width: 98%;
+  height: 24px;
+  border-radius: 8px;
+  border: 1px solid #000;
+  background: #FFF;
+}
+
+button{
+  width: 100%;
+  padding: 10px 24px;
+  gap: 10px;
+  border-radius: 12px;
+  border: 2px solid #013220;
+  background: #C3F6D7;
+  color: #000;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
